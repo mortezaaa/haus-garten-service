@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haus-Garten-Service - Gebäudereinigung & Gartenpflege in Hamburg</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-green-700 text-white p-6 shadow-md">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="logo.jpg" alt="Haus Garten Logo" class="w-12 h-12 rounded-lg object-cover">
+                <h1 class="text-2xl font-bold">Haus-Garten-Service</h1>
+            </div>
+            <div class="text-sm">
+                <p>☎ 01578 1556437</p>
+                <p>✉ info_haus_garten@yahoo.com</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-green-100 py-16 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">Zuverlässig – Gründlich – Preiswert</h2>
+            <p class="text-lg mb-6">Ihr Partner für Gebäudereinigung & Gartenpflege in Hamburg</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="max-w-5xl mx-auto py-16 px-6">
+        <h3 class="text-2xl font-semibold mb-8 text-center">Unsere Leistungen</h3>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Gebäudereinigung -->
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-200">
+                <h4 class="text-xl font-bold mb-4">🏢 Gebäudereinigung</h4>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Büro-, Praxis- und Treppenhausreinigung</li>
+                    <li>Grundreinigung</li>
+                    <li>Fensterreinigung</li>
+                    <li>Teppichreinigung</li>
+                </ul>
+            </div>
+
+            <!-- Gartenpflege -->
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-200">
+                <h4 class="text-xl font-bold mb-4">🌳 Gartenpflege</h4>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Rasenmähen und Vertikutieren</li>
+                    <li>Heckenschnitt</li>
+                    <li>Unkrautentfernung</li>
+                    <li>Laubarbeiten</li>
+                    <li>Baumschnitt</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-white py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-2xl font-semibold mb-8 text-center">Warum Haus-Garten-Service?</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl mb-4">⭐</div>
+                    <h4 class="text-lg font-semibold mb-2">Erfahrung</h4>
+                    <p class="text-gray-600">Jahrelange Erfahrung in der Gebäudereinigung und Gartenpflege</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h4 class="text-lg font-semibold mb-2">Preiswert</h4>
+                    <p class="text-gray-600">Faire Preise ohne versteckte Kosten</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-4">🔧</div>
+                    <h4 class="text-lg font-semibold mb-2">Zuverlässig</h4>
+                    <p class="text-gray-600">Pünktlich und gründlich in der Ausführung</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="bg-green-700 text-white py-12">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <h3 class="text-2xl font-semibold mb-4">Kontakt</h3>
+            <div class="space-y-2 mb-6">
+                <p>📍 Waldweg 79, 22393 Hamburg</p>
+                <p>📞 01578 1556437 (Herr Ghafari)</p>
+                <p>✉ info_haus_garten@yahoo.com</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                    href="tel:+4915781556437"
+                    class="bg-white text-green-700 px-6 py-3 rounded-xl shadow hover:bg-gray-100 transition-colors duration-200"
+                >
+                    Anrufen
+                </a>
+                <a
+                    href="mailto:info_haus_garten@yahoo.com"
+                    class="bg-white text-green-700 px-6 py-3 rounded-xl shadow hover:bg-gray-100 transition-colors duration-200"
+                >
+                    Nachricht senden
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 text-center py-6">
+        <div class="max-w-5xl mx-auto px-6">
+            <p>© <span id="currentYear"></span> Haus-Garten-Service – Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
